@@ -1,0 +1,134 @@
+<div class="lg:flex lg:min-h-screen" data-controller="scroll-spy">
+
+  <!-- Sidebar -->
+  <aside class="lg:fixed lg:w-[380px] lg:h-screen px-8 py-16 lg:py-24 flex flex-col justify-between">
+    <div>
+      <h1 class="font-display text-3xl font-bold text-paper">Anmol Yousaf</h1>
+      <p class="font-mono text-sm text-amber-soft mt-2">Full-Stack &amp; DevOps Engineer</p>
+      <p class="text-paper-dim mt-4 leading-relaxed max-w-xs">
+        8 years of experience shipping and running production systems in Ruby on Rails and AWS.
+        Independent contractor, Annetech LLC, US.
+      </p>
+
+      <nav class="mt-12 hidden lg:block" aria-label="Section navigation">
+        <ul class="space-y-4 font-mono text-sm">
+          <li><a href="#about" data-scroll-spy-target="link" class="text-paper-dim hover:text-amber transition-colors">about</a></li>
+          <li><a href="#experience" data-scroll-spy-target="link" class="text-paper-dim hover:text-amber transition-colors">experience</a></li>
+          <li><a href="#projects" data-scroll-spy-target="link" class="text-paper-dim hover:text-amber transition-colors">projects</a></li>
+          <li><a href="#currently" data-scroll-spy-target="link" class="text-paper-dim hover:text-amber transition-colors">currently</a></li>
+          <li><a href="#contact" data-scroll-spy-target="link" class="text-paper-dim hover:text-amber transition-colors">contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="flex gap-5 mt-12 lg:mt-0">
+      <a href="https://github.com/anmol-yousaf" class="text-paper-dim hover:text-amber transition-colors" aria-label="GitHub">GitHub</a>
+      <a href="https://linkedin.com/in/anmol-yousaf" class="text-paper-dim hover:text-amber transition-colors" aria-label="LinkedIn">LinkedIn</a>
+      <a href="mailto:anmolyousaf94@gmail.com" class="text-paper-dim hover:text-amber transition-colors" aria-label="Email">Email</a>
+    </div>
+  </aside>
+
+  <!-- Content -->
+  <main class="lg:ml-[380px] px-8 py-16 lg:py-24 max-w-2xl">
+
+    <!-- Hero -->
+    <section class="mb-24 scroll-mt-16 reveal" data-scroll-spy-target="reveal">
+      <p class="font-mono text-amber text-sm mb-4">$ whoami</p>
+      <h2 class="font-display text-2xl lg:text-3xl font-bold leading-snug text-paper">
+        I build things people click on.
+      </h2>
+    </section>
+
+    <!-- Signature: deploy log strip -->
+    <section class="mb-24 border border-slate/30 rounded-md bg-ink-soft font-mono text-sm overflow-hidden reveal" data-scroll-spy-target="reveal" aria-label="Career highlights, shown as a deploy log">
+      <div class="px-5 py-3 border-b border-slate/30 text-paper-dim text-xs">career.log</div>
+      <div class="px-5 py-4 space-y-2 text-paper-dim">
+        <p><span class="text-amber">$</span> led team of 10+ engineers @ EZO, architected private cloud infra for enterprise clients</p>
+        <p><span class="text-amber">$</span> reduced production downtime 20% via process changes @ Wego Health</p>
+        <p><span class="text-amber">$</span> sole developer &amp; infra owner, launched Wild West RV Supplies</p>
+        <p><span class="text-amber">$</span> operating US LLC, contracting for clients across US/UK since 2022</p>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="mb-24 scroll-mt-16 reveal" data-scroll-spy-target="reveal">
+      <h3 class="font-mono text-amber text-sm mb-6">01 — about</h3>
+      <p class="text-paper-dim leading-relaxed">
+        I'm a full-stack developer and DevOps engineer with 9 years of experience across Ruby on Rails,
+        Laravel, and AWS. I own a US-based LLC providing contract development and infrastructure services
+        to clients in the US and UK — from architecting CI/CD pipelines to leading technical teams
+        through production incidents. Based in Lahore, working remotely with async-friendly overlap hours.
+      </p>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="mb-24 scroll-mt-16">
+      <h3 class="font-mono text-amber text-sm mb-6">02 — experience</h3>
+      <div class="space-y-10">
+        <% @experience.each do |job| %>
+          <div class="border-l-2 border-slate/30 pl-6">
+            <div class="flex flex-wrap items-baseline gap-x-3">
+              <h4 class="font-display font-bold text-paper"><%= job[:role] %></h4>
+              <span class="text-paper-dim">·</span>
+              <span class="text-paper-dim"><%= job[:org] %></span>
+            </div>
+            <p class="font-mono text-xs text-slate mt-1"><%= job[:period] %></p>
+            <p class="font-mono text-xs text-amber-soft mt-3"><%= job[:log] %></p>
+            <ul class="mt-3 space-y-1.5 text-paper-dim text-sm leading-relaxed">
+              <% job[:notes].each do |note| %>
+                <li>— <%= note %></li>
+              <% end %>
+            </ul>
+          </div>
+        <% end %>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="mb-24 scroll-mt-16 reveal" data-scroll-spy-target="reveal">
+      <h3 class="font-mono text-amber text-sm mb-6">03 — projects</h3>
+      <div class="space-y-8">
+        <% @projects.each do |project| %>
+          <div class="border border-slate/30 rounded-md p-6 bg-ink-soft hover:border-amber/50 transition-colors">
+            <div class="flex flex-wrap items-baseline justify-between gap-2">
+              <h4 class="font-display font-bold text-paper text-lg"><%= project.title %></h4>
+              <% if project.url.present? %>
+                <a href="<%= project.url %>" class="font-mono text-xs text-amber hover:text-amber-soft transition-colors">view →</a>
+              <% end %>
+            </div>
+            <p class="text-paper-dim text-sm leading-relaxed mt-3"><%= project.description %></p>
+            <% if project.tech_stack.present? %>
+              <p class="font-mono text-xs text-slate mt-4"><%= project.tech_stack %></p>
+            <% end %>
+            <% if project.github_url.present? %>
+              <a href="<%= project.github_url %>" class="font-mono text-xs text-paper-dim hover:text-amber transition-colors mt-2 inline-block">source →</a>
+            <% end %>
+          </div>
+        <% end %>
+      </div>
+    </section>
+
+    <!-- Currently -->
+    <section id="currently" class="mb-24 scroll-mt-16 reveal" data-scroll-spy-target="reveal">
+      <h3 class="font-mono text-amber text-sm mb-6">04 — currently</h3>
+      <div class="border border-slate/30 rounded-md p-6 bg-ink-soft">
+        <p class="text-paper leading-relaxed">
+          Working through the <span class="text-amber-soft">AWS Certified Solutions Architect – Associate (SAA-C03)</span>
+          certification, building on production AWS experience from client infrastructure work.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="mb-32 scroll-mt-16 reveal" data-scroll-spy-target="reveal">
+      <h3 class="font-mono text-amber text-sm mb-6">05 — contact</h3>
+      <p class="text-paper-dim leading-relaxed mb-4">
+        Open to new Rails and Laravel contract work. The fastest way to reach me:
+      </p>
+      <a href="mailto:contact@anmolyousaf.com" class="font-mono text-amber hover:text-amber-soft transition-colors text-lg">
+        contact@anmolyousaf.com
+      </a>
+    </section>
+
+  </main>
+</div>
