@@ -28,10 +28,33 @@ body {
   font-family: var(--font-mono);
 }
 
+aside {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
 a:focus-visible,
 button:focus-visible {
   outline: 2px solid var(--color-amber);
   outline-offset: 2px;
+}
+
+@keyframes scan {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(300%); }
+}
+.animate-scan {
+  animation: scan 3s linear infinite;
+}
+
+@keyframes blink {
+  0%, 45%   { opacity: 1; }
+  50%, 95%  { opacity: 0.15; }
+  100%      { opacity: 1; }
+}
+
+.animate-blink {
+  animation: blink 1.6s ease-in-out infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {

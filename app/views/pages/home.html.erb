@@ -1,13 +1,13 @@
 <div class="lg:flex lg:min-h-screen" data-controller="scroll-spy">
 
   <!-- Sidebar -->
-  <aside class="lg:fixed lg:w-[380px] lg:h-screen px-8 py-16 lg:py-24 flex flex-col justify-between">
+  <aside class="min-h-[100dvh] lg:fixed lg:w-[380px] lg:h-screen px-8 py-16 lg:py-24 flex flex-col justify-between">
     <div>
       <h1 class="font-display text-3xl font-bold text-paper">Anmol Yousaf</h1>
       <p class="font-mono text-sm text-amber-soft mt-2">Full-Stack &amp; DevOps Engineer</p>
       <p class="text-paper-dim mt-4 leading-relaxed max-w-xs">
-        8 years of experience shipping and running production systems in Ruby on Rails and AWS.
-        Independent contractor, Annetech LLC, US.
+        8+ years of experience shipping and running production systems in Ruby on Rails and AWS.
+        Independent contractor, Annetech LLC | USA.
       </p>
 
       <nav class="mt-12 hidden lg:block" aria-label="Section navigation">
@@ -21,10 +21,32 @@
       </nav>
     </div>
 
-    <div class="flex gap-5 mt-12 lg:mt-0">
-      <a href="https://github.com/anmol-yousaf" class="text-paper-dim hover:text-amber transition-colors" aria-label="GitHub">GitHub</a>
-      <a href="https://linkedin.com/in/anmol-yousaf" class="text-paper-dim hover:text-amber transition-colors" aria-label="LinkedIn">LinkedIn</a>
-      <a href="mailto:anmolyousaf94@gmail.com" class="text-paper-dim hover:text-amber transition-colors" aria-label="Email">Email</a>
+    <!-- Social icons -->
+    <div class="flex gap-4 mt-12 lg:mt-0 pb-2">
+      <a href="https://github.com/anmol-yousaf"
+         class="flex items-center justify-center w-11 h-11 rounded-lg border border-slate/30 bg-ink-soft text-paper-dim hover:text-amber hover:border-amber/50 hover:bg-ink transition-colors"
+         aria-label="GitHub" target="_blank" rel="noopener">
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+          <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 2.87-.39c.97 0 1.95.13 2.87.39 2.19-1.49 3.15-1.18 3.15-1.18.62 1.58.23 2.75.11 3.04.73.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.39-5.25 5.67.42.36.78 1.08.78 2.17 0 1.57-.01 2.83-.01 3.22 0 .3.21.66.79.55A10.99 10.99 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5Z"/>
+        </svg>
+      </a>
+
+      <a href="https://linkedin.com/in/anmol-yousaf"
+         class="flex items-center justify-center w-11 h-11 rounded-lg border border-slate/30 bg-ink-soft text-paper-dim hover:text-amber hover:border-amber/50 hover:bg-ink transition-colors"
+         aria-label="LinkedIn" target="_blank" rel="noopener">
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+          <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/>
+        </svg>
+      </a>
+
+      <a href="mailto:contact@anmolyousaf.com"
+         class="flex items-center justify-center w-11 h-11 rounded-lg border border-slate/30 bg-ink-soft text-paper-dim hover:text-amber hover:border-amber/50 hover:bg-ink transition-colors"
+         aria-label="Email">
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="20" height="20">
+          <path d="M3 5.5h18v13H3v-13Z" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="m3 6 9 7 9-7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
     </div>
   </aside>
 
@@ -35,7 +57,7 @@
     <section class="mb-24 scroll-mt-16 reveal" data-scroll-spy-target="reveal">
       <p class="font-mono text-amber text-sm mb-4">$ whoami</p>
       <h2 class="font-display text-2xl lg:text-3xl font-bold leading-snug text-paper">
-        I build things people click on.
+        I don't just build, I own what happens after.
       </h2>
     </section>
 
@@ -54,10 +76,7 @@
     <section id="about" class="mb-24 scroll-mt-16 reveal" data-scroll-spy-target="reveal">
       <h3 class="font-mono text-amber text-sm mb-6">01 — about</h3>
       <p class="text-paper-dim leading-relaxed">
-        I'm a full-stack developer and DevOps engineer with 9 years of experience across Ruby on Rails,
-        Laravel, and AWS. I own a US-based LLC providing contract development and infrastructure services
-        to clients in the US and UK — from architecting CI/CD pipelines to leading technical teams
-        through production incidents. Based in Lahore, working remotely with async-friendly overlap hours.
+        I'm a full-stack developer and DevOps engineer with 8+ years of experience across Ruby on Rails, Laravel, and AWS. I own a US-based LLC providing contract development and infrastructure services to clients in the US and UK from providing full-stack development help, manage technical team to architecting CI/CD pipelines. Expert at integrating third-party services and streamlining operations for enhanced efficiency. Working remotely with async-friendly overlap hours.
       </p>
     </section>
 
@@ -109,13 +128,33 @@
     </section>
 
     <!-- Currently -->
+    <!-- Currently -->
     <section id="currently" class="mb-24 scroll-mt-16 reveal" data-scroll-spy-target="reveal">
       <h3 class="font-mono text-amber text-sm mb-6">04 — currently</h3>
-      <div class="border border-slate/30 rounded-md p-6 bg-ink-soft">
-        <p class="text-paper leading-relaxed">
-          Working through the <span class="text-amber-soft">AWS Certified Solutions Architect – Associate (SAA-C03)</span>
-          certification, building on production AWS experience from client infrastructure work.
-        </p>
+
+      <div class="relative border border-slate/30 rounded-md bg-ink-soft overflow-hidden">
+        <!-- Scanning line -->
+        <div class="absolute top-0 left-0 h-[2px] w-full overflow-hidden">
+          <div class="h-full w-1/3 bg-gradient-to-r from-transparent via-amber to-transparent animate-scan"></div>
+        </div>
+
+        <!-- Ticker header bar -->
+        <div class="flex items-center gap-2.5 px-6 py-4 border-b border-slate/30 bg-ink/40">
+          <span class="relative flex h-2 w-2">
+            <span class="absolute inline-flex h-full w-full rounded-full bg-amber animate-blink"></span>
+          </span>
+          <span class="font-mono text-xs text-amber tracking-widest uppercase">Live</span>
+          <span class="font-mono text-xs text-paper-dim ml-auto">Aug 2026</span>
+        </div>
+
+        <!-- Headline entry -->
+        <div class="px-6 py-6">
+          <p class="font-mono text-xs text-paper-dim mb-3">$ status --track=certification</p>
+          <p class="text-paper leading-relaxed">
+            Working through the <span class="text-amber-soft">AWS Certified Solutions Architect, Associate (SAA-C03)</span>
+            certification.
+          </p>
+        </div>
       </div>
     </section>
 

@@ -11,7 +11,7 @@ class PagesController < ApplicationController
       ]
     },
     {
-      role: "Independent Contractor",
+      role: "Full Stack Engineer",
       org: "Sachse Construction",
       period: "2025 — Present",
       log: "$ deploy --feature=bug-lifecycle --target=production",
@@ -21,9 +21,9 @@ class PagesController < ApplicationController
       ]
     },
     {
-      role: "Technical Lead",
+      role: "Technical Team Lead",
       org: "Wild West Pool Supplies, LLC",
-      period: "2023 — 2025",
+      period: "2022 — 2025",
       log: "$ launch --product=Wild-West-RV-Supplies --solo-dev=true",
       notes: [
         "Managed all development and server infrastructure as sole developer.",
@@ -31,7 +31,7 @@ class PagesController < ApplicationController
       ]
     },
     {
-      role: "Technical Team Lead",
+      role: "Software Architect",
       org: "Wego Health (acquired by Health Union)",
       period: "2021 — 2023",
       log: "$ reduce --metric=downtime --by=20% --infra=DigitalOcean/Chef",
@@ -41,7 +41,7 @@ class PagesController < ApplicationController
       ]
     },
     {
-      role: "Senior Developer",
+      role: "Senior Software Engineer",
       org: "GrowthPhysics",
       period: "2021 — 2022",
       log: "$ review --scope=architecture --mentor=junior_devs",
@@ -52,9 +52,9 @@ class PagesController < ApplicationController
     },
     {
       role: "Senior Software Engineer",
-      org: "EZO (AssetSonar)",
+      org: "EZO",
       period: "2014 — 2021",
-      log: "$ lead --team=10_engineers --product=AssetSonar --clouds=private",
+      log: "$ lead --team=10_engineers --product=AssetSonar,EZOfficeInventory,EZRentOut --clouds=private",
       notes: [
         "Led the tech team for AssetSonar, the company's flagship product.",
         "Built and integrated multiple private clouds for enterprise clients, improving data security.",
