@@ -1,7 +1,7 @@
 <div class="lg:flex lg:min-h-screen max-w-[1440px] mx-auto" data-controller="scroll-spy">
 
   <!-- Sidebar -->
-  <aside class="min-h-[100dvh] lg:sticky lg:top-0 lg:h-screen lg:w-[380px] lg:shrink-0 px-8 py-16 lg:py-24 flex flex-col justify-between">
+  <aside class="lg:min-h-[100dvh] lg:sticky lg:top-0 lg:h-screen lg:w-[380px] lg:shrink-0 px-8 py-16 lg:py-24 flex flex-col lg:justify-between">
     <div>
       <h1 class="font-display text-3xl font-bold text-paper">Anmol Yousaf</h1>
       <p class="font-mono text-sm text-amber-soft mt-2">Full-Stack &amp; DevOps Engineer</p>
@@ -23,6 +23,18 @@
 
         <span>Resume</span>
       </a>
+
+      <!-- Mobile nav: horizontal scroll strip -->
+      <nav class="lg:hidden mt-6 -mx-8 relative" aria-label="Section navigation">
+        <ul class="flex gap-5 font-mono text-sm whitespace-nowrap px-8 overflow-x-auto scrollbar-hide">
+          <li><a href="#about" class="text-paper-dim hover:text-amber transition-colors">about</a></li>
+          <li><a href="#experience" class="text-paper-dim hover:text-amber transition-colors">experience</a></li>
+          <li><a href="#projects" class="text-paper-dim hover:text-amber transition-colors">projects</a></li>
+          <li><a href="#currently" class="text-paper-dim hover:text-amber transition-colors">currently</a></li>
+          <li><a href="#contact" class="text-paper-dim hover:text-amber transition-colors pr-4">contact</a></li>
+        </ul>
+        <div class="absolute top-0 right-0 h-full w-10 bg-gradient-to-l from-ink to-transparent pointer-events-none"></div>
+      </nav>
 
       <nav class="mt-12 hidden lg:block" aria-label="Section navigation">
         <ul class="space-y-4 font-mono text-sm">

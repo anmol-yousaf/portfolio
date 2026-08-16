@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="<%= asset_path('favicon.svg') %>">
+    <link rel="icon" type="image/png" sizes="32x32" href="<%= asset_path('favicon.svg') %>">
+    <link rel="apple-touch-icon" href="<%= asset_path('favicon.svg') %>">
 
     <%= yield :head %>
     <%= stylesheet_link_tag "tailwind", "data-turbo-track": "reload" %>
@@ -19,4 +22,18 @@
   <body class="bg-ink text-paper antialiased">
     <%= yield %>
   </body>
+  <div id="page-loader">
+    <span class="loader-mark">AY<span class="loader-cursor"></span></span>
+  </div>
+
+  <script>
+    window.addEventListener("load", function () {
+      var loader = document.getElementById("page-loader");
+      if (loader) {
+        setTimeout(function () {
+          loader.classList.add("loader-hidden");
+        }, 200);
+      }
+    });
+  </script>
 </html>
