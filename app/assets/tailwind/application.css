@@ -33,6 +33,34 @@ aside {
   min-height: 100dvh;
 }
 
+
+@keyframes float-bob {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-6px); }
+}
+
+@keyframes pulse-ring {
+  0%   { transform: scale(1); opacity: 0.4; }
+  100% { transform: scale(1.6); opacity: 0; }
+}
+
+.fab-resume {
+  animation: float-bob 3s ease-in-out infinite;
+}
+
+.fab-resume:hover {
+  animation: none;
+}
+
+.fab-ring {
+  animation: pulse-ring 2s ease-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fab-resume { animation: none; }
+  .fab-ring { animation: none; display: none; }
+}
+
 a:focus-visible,
 button:focus-visible {
   outline: 2px solid var(--color-amber);

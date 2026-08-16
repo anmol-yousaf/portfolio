@@ -1,58 +1,65 @@
 class PagesController < ApplicationController
   EXPERIENCE = [
     {
-      role: "US LLC Owner, Independent Contractor",
+      role: "Technical Consultant",
       org: "Self-Employed",
       period: "2022 — Present",
       log: "$ own_operate --entity=LLC --clients=US,UK --services=dev,devops",
       notes: [
         "Own and operate a US-based LLC providing contract development and DevOps services to clients across the US and UK.",
         "Engage directly with clients on technical strategy, delivery, and ongoing infrastructure support."
-      ]
-    },
-    {
-      role: "Full Stack Engineer",
-      org: "Sachse Construction",
-      period: "2025 — Present",
-      log: "$ deploy --feature=bug-lifecycle --target=production",
-      notes: [
-        "Transforming the bug management lifecycle into a smoother, more transparent process for end users.",
-        "Developing and delivering new product features."
-      ]
-    },
-    {
-      role: "Technical Team Lead",
-      org: "Wild West Pool Supplies, LLC",
-      period: "2022 — 2025",
-      log: "$ launch --product=Wild-West-RV-Supplies --solo-dev=true",
-      notes: [
-        "Managed all development and server infrastructure as sole developer.",
-        "Successfully launched a new product line, Wild West RV Supplies."
-      ]
-    },
-    {
-      role: "Software Architect",
-      org: "Wego Health (acquired by Health Union)",
-      period: "2021 — 2023",
-      log: "$ reduce --metric=downtime --by=20% --infra=DigitalOcean/Chef",
-      notes: [
-        "Managed development of multiple products and technical teams for the Patient Leader Network.",
-        "Implemented process improvements, reducing server downtime by 20%."
-      ]
-    },
-    {
-      role: "Senior Software Engineer",
-      org: "GrowthPhysics",
-      period: "2021 — 2022",
-      log: "$ review --scope=architecture --mentor=junior_devs",
-      notes: [
-        "Provided part-time senior development support, contributing to architecture design and code reviews.",
-        "Mentored junior developers, fostering a culture of learning and collaboration."
+      ],
+      sub_roles: [
+        {
+          role: "Full Stack Engineer",
+          org: "Sachse Construction",
+          url: "https://sachseconstruction.com/",
+          period: "2025 — Present",
+          log: "$ deploy --feature=bug-lifecycle --target=production",
+          notes: [
+            "Transforming the bug management lifecycle into a smoother, more transparent process for end users.",
+            "Developing and delivering new product features."
+          ]
+        },
+        {
+          role: "Full Stack Engineer",
+          org: "Wild West Pool Supplies, LLC",
+          url: "https://www.wildwestpoolsupplies.com/",
+          period: "2022 — 2025",
+          log: "$ launch --product=Wild-West-RV-Supplies --solo-dev=true",
+          notes: [
+            "Managed all development and server infrastructure as sole developer.",
+            "Successfully launched a new product line, Wild West RV Supplies."
+          ]
+        },
+        {
+          role: "Software Architect",
+          org: "Wego Health (acquired by Health Union)",
+          url: "https://health-union.com/",
+          period: "2021 — 2023",
+          log: "$ reduce --metric=downtime --by=20% --infra=DigitalOcean/Chef",
+          notes: [
+            "Managed development of multiple products and technical teams for the Patient Leader Network.",
+            "Implemented process improvements, reducing server downtime by 20%."
+          ]
+        },
+        {
+          role: "Senior Software Engineer",
+          org: "GrowthPhysics",
+          url: "https://www.growthphysics.com/",
+          period: "2021 — 2022",
+          log: "$ review --scope=architecture --mentor=junior_devs",
+          notes: [
+            "Provided part-time senior development support, contributing to architecture design and code reviews.",
+            "Mentored junior developers, fostering a culture of learning and collaboration."
+          ]
+        }
       ]
     },
     {
       role: "Senior Software Engineer",
       org: "EZO",
+      url: "https://ezo.io/",
       period: "2014 — 2021",
       log: "$ lead --team=10_engineers --product=AssetSonar,EZOfficeInventory,EZRentOut --clouds=private",
       notes: [
