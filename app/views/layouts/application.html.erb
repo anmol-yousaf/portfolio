@@ -59,13 +59,15 @@
   </div>
 
   <script>
-    window.addEventListener("load", function () {
+    function hidePageLoader() {
       var loader = document.getElementById("page-loader");
-      if (loader) {
+      if (loader && !loader.classList.contains("loader-hidden")) {
         setTimeout(function () {
           loader.classList.add("loader-hidden");
         }, 200);
       }
-    });
+    }
+    window.addEventListener("load", hidePageLoader);
+    document.addEventListener("turbo:load", hidePageLoader);
   </script>
 </html>

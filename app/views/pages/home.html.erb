@@ -27,22 +27,22 @@
       <!-- Mobile nav: horizontal scroll strip -->
       <nav class="lg:hidden mt-6 -mx-8 relative" aria-label="Section navigation">
         <ul class="flex gap-5 font-mono text-sm whitespace-nowrap px-8 overflow-x-auto scrollbar-hide">
-          <li><a href="#about" class="text-paper-dim hover:text-amber transition-colors">about</a></li>
-          <li><a href="#experience" class="text-paper-dim hover:text-amber transition-colors">experience</a></li>
-          <li><a href="#projects" class="text-paper-dim hover:text-amber transition-colors">projects</a></li>
-          <li><a href="#currently" class="text-paper-dim hover:text-amber transition-colors">currently</a></li>
-          <li><a href="#contact" class="text-paper-dim hover:text-amber transition-colors pr-4">contact</a></li>
+          <li><a href="#about" data-turbo="false" class="text-paper-dim hover:text-amber transition-colors">about</a></li>
+          <li><a href="#experience" data-turbo="false" class="text-paper-dim hover:text-amber transition-colors">experience</a></li>
+          <li><a href="#projects" data-turbo="false" class="text-paper-dim hover:text-amber transition-colors">projects</a></li>
+          <li><a href="#currently" data-turbo="false" class="text-paper-dim hover:text-amber transition-colors">currently</a></li>
+          <li><a href="#contact" data-turbo="false" class="text-paper-dim hover:text-amber transition-colors pr-4">contact</a></li>
         </ul>
         <div class="absolute top-0 right-0 h-full w-10 bg-gradient-to-l from-ink to-transparent pointer-events-none"></div>
       </nav>
 
       <nav class="mt-12 hidden lg:block" aria-label="Section navigation">
         <ul class="space-y-4 font-mono text-sm">
-          <li><a href="#about" data-scroll-spy-target="link" class="text-paper-dim hover:text-amber transition-colors">about</a></li>
-          <li><a href="#experience" data-scroll-spy-target="link" class="text-paper-dim hover:text-amber transition-colors">experience</a></li>
-          <li><a href="#projects" data-scroll-spy-target="link" class="text-paper-dim hover:text-amber transition-colors">projects</a></li>
-          <li><a href="#currently" data-scroll-spy-target="link" class="text-paper-dim hover:text-amber transition-colors">currently</a></li>
-          <li><a href="#contact" data-scroll-spy-target="link" class="text-paper-dim hover:text-amber transition-colors">contact</a></li>
+          <li><a href="#about" data-turbo="false" data-action="click->scroll-spy#jumpTo" data-scroll-spy-target="link" class="text-paper-dim hover:text-amber transition-colors">about</a></li>
+          <li><a href="#experience" data-turbo="false" data-action="click->scroll-spy#jumpTo" data-scroll-spy-target="link" class="text-paper-dim hover:text-amber transition-colors">experience</a></li>
+          <li><a href="#projects" data-turbo="false" data-action="click->scroll-spy#jumpTo" data-scroll-spy-target="link" class="text-paper-dim hover:text-amber transition-colors">projects</a></li>
+          <li><a href="#currently" data-turbo="false" data-action="click->scroll-spy#jumpTo" data-scroll-spy-target="link" class="text-paper-dim hover:text-amber transition-colors">currently</a></li>
+          <li><a href="#contact" data-turbo="false" data-action="click->scroll-spy#jumpTo" data-scroll-spy-target="link" class="text-paper-dim hover:text-amber transition-colors">contact</a></li>
         </ul>
       </nav>
     </div>

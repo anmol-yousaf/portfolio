@@ -81,6 +81,11 @@ button:focus-visible {
 /* ============================================
    Components
    ============================================ */
+
+html {
+    scroll-behavior: auto;
+  }
+
 .fab-resume {
   animation: float-bob 3s ease-in-out infinite;
 }
@@ -156,6 +161,10 @@ button:focus-visible {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+
+  html {
+    scroll-behavior: auto;
   }
 
   .fab-ring {
