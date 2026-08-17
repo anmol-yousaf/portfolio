@@ -15,6 +15,15 @@
     <link rel="icon" type="image/png" sizes="32x32" href="<%= asset_path('favicon.svg') %>">
     <link rel="apple-touch-icon" href="<%= asset_path('favicon.svg') %>">
 
+    <!-- Open Graph -->
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Anmol Yousaf — Full-Stack & DevOps Engineer">
+    <meta property="og:description" content="8+ years shipping and running production systems in Ruby on Rails, Laravel, and AWS.">
+    <meta property="og:url" content="https://anmolyousaf.com">
+    <meta property="profile:first_name" content="Anmol">
+    <meta property="profile:last_name" content="Yousaf">
+    <meta name="twitter:card" content="summary">
+
     <%= yield :head %>
     <%= stylesheet_link_tag "tailwind", "data-turbo-track": "reload" %>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
