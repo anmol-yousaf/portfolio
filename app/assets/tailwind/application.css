@@ -83,7 +83,7 @@ button:focus-visible {
    ============================================ */
 
 html {
-    scroll-behavior: auto;
+    scroll-behavior: smooth;
   }
 
 .fab-resume {
@@ -164,7 +164,7 @@ html {
   }
 
   html {
-    scroll-behavior: auto;
+    scroll-behavior: smooth;
   }
 
   .fab-ring {
