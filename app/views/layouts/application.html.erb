@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Anmol Yousaf — Full-Stack & DevOps Engineer</title>
+    <title>Anmol Yousaf — Full-Stack & DevOps Engineer (Rails, AWS)</title>
+    <meta name="description" content="Anmol Yousaf is a Full-Stack & DevOps Engineer with 8+ years shipping and running production systems in Ruby on Rails, Laravel, and AWS.">
+    <link rel="canonical" href="https://anmolyousaf.com/">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description" content="Full-stack developer and DevOps engineer — Ruby on Rails, AWS, 9 years shipping and running production systems.">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -18,6 +19,24 @@
     <%= stylesheet_link_tag "tailwind", "data-turbo-track": "reload" %>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Anmol Yousaf",
+      "url": "https://anmolyousaf.com",
+      "jobTitle": "Full-Stack & DevOps Engineer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Annetech LLC"
+      },
+      "sameAs": [
+        "https://github.com/anmol-yousaf",
+        "https://linkedin.com/in/anmol-yousaf"
+      ],
+      "knowsAbout": ["Ruby on Rails", "Laravel", "AWS", "DevOps", "Elixir"]
+    }
+    </script>
   </head>
   <body class="bg-ink text-paper antialiased">
     <%= yield %>
